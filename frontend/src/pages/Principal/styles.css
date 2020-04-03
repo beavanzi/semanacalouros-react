@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 
+
 .principal-container {
   max-width: 1180px;
   width: 100%;
@@ -11,12 +12,16 @@
 
 .principal-container h1 {
   font-size: 40px;
+  line-height: 55px;
+  text-shadow: 5px 5px 0px rgba(255,128,64,0.8);
 }
 
 .principal-container p {
   margin-top: 30px;
   font-size: 35px;
-  line-height: 38px;
+  line-height: 45px;
+  text-shadow: 5px 5px 0px rgba(255,128,64,0.8);
+
 }
 
 .principal-container h1,
@@ -34,7 +39,7 @@ button {
 }
 
 .principal-container img {
-  width: 48%;
+  height: 50vh;
   margin-top: 23px;
   margin-bottom: 23px;
 }
@@ -45,9 +50,37 @@ button {
   width: fit-content;
   padding: 6px;
   font-size: 40px;
+  background-color: #fff;
 }
 .principal-container nav button:hover {
   background: #ff8040;
   color: #fff;
   border-color: #fff;
+}
+
+@media only screen and (max-width: 650px) {
+  .principal-container img {
+    height: 70vw;
+    margin-top: 23px;
+    margin-bottom: 23px;
+  }
+}
+
+@media only screen and (max-width: 484px) {
+  .principal-container img {
+    margin-top: 23px;
+    margin-bottom: 23px;
+  }
+
+  .principal-container h1 {
+    font-size: 25px;
+    line-height: 32px;
+
+  }
+  
+  .principal-container p {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
