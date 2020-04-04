@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, Link, Redirect, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 import "./styles.css";
 import gifDinosaur from "../../assets/dinosaurgoogle.gif";
@@ -8,7 +8,7 @@ export default function Principal() {
   const history = useHistory();
 
   function NavToLink() {
-    history.push("/cronograma");
+    history.push("/info");
   }
 
   return (

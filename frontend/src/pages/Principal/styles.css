@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+* {
+  font: 400 14px "Press Start 2p", cursive;
+}
 
 .principal-container {
   max-width: 1180px;
@@ -58,6 +61,7 @@ button {
   padding: 6px;
   font-size: 35px;
   background-color: #fff;
+  margin: 8px 0px;
 }
 .principal-container nav button:hover {
   background: #ff8040;

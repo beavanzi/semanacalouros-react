@@ -9,6 +9,9 @@ export default function Menu() {
   return (
     <div className="box-menu">
       <nav>
+        <NavLink className="menu-item" to="/info" activeClassName="active">
+          Informações
+        </NavLink>
         <NavLink
           className="menu-item"
           exact
@@ -17,8 +20,11 @@ export default function Menu() {
         >
           Cronograma
         </NavLink>
-        <NavLink className="menu-item" to="/map" activeClassName="active">
-          Mapa da UEM
+        <NavLink className="menu-item" to="/local" activeClassName="active">
+          Local
+        </NavLink>
+        <NavLink className="menu-item" to="/avaliacao" activeClassName="active">
+          Avaliação
         </NavLink>
       </nav>
     </div>

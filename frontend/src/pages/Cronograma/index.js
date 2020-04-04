@@ -1,12 +1,14 @@
 import React from "react";
 import Menu from "../../components/Menu";
+import Hello from "../../components/Hello";
 
 import "./styles.css";
 
 export default function Cronograma() {
   return (
     <div className="box-container">
-      <h1>Hello World!</h1>
+      {/* <h1>Hello World!</h1> */}
+      <Hello />
       <div className="content-container">
         <Menu />
         <div className="table-content">

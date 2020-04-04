@@ -1,15 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+@font-face {
+  font-family: "unscii";
+  src: url("./fonts/unscii-16-full.ttf") format("truetype"),
+    url("./fonts/unscii-16-full.woff") format("woff");
+}
 
 * {
   margin: 0;
   padding: 0;
   outline: 0;
   box-sizing: border-box;
+  font-family: unscii;
 }
 
 body {
-  font: 400 14px "Press Start 2p", cursive;
   color: #fff;
   background: #000;
   -webkit-font-smoothing: antialiased;
