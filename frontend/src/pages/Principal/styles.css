@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 
-
 .principal-container {
   max-width: 1180px;
   width: 100%;
@@ -13,18 +12,18 @@
 .principal-container h1 {
   font-size: 40px;
   line-height: 55px;
-  text-shadow: 5px 5px 0px rgba(255,128,64,0.8);
+  text-shadow: 4px 4px 0px rgba(255, 128, 64, 0.8);
 }
 
 .principal-container p {
-  margin-top: 30px;
+  margin-top: 20px;
   font-size: 35px;
   line-height: 45px;
-  text-shadow: 5px 5px 0px rgba(255,128,64,0.8);
-
+  text-shadow: 4px 4px 0px rgba(255, 128, 64, 0.8);
 }
 
 .principal-container h1,
+h2,
 p,
 button {
   font-family: "Press Start 2p", cursive;
@@ -39,9 +38,17 @@ button {
 }
 
 .principal-container img {
-  height: 50vh;
+  height: 47vh;
   margin-top: 23px;
-  margin-bottom: 23px;
+  margin-bottom: 18px;
+}
+
+.principal-container h2 {
+  font-size: 20px;
+  line-height: 20px;
+  color: white;
+  margin-bottom: 18px;
+  text-shadow: 3px 3px 0px rgba(255, 128, 64, 0.8);
 }
 
 .principal-container nav button {
@@ -49,7 +56,7 @@ button {
   color: #ff8040;
   width: fit-content;
   padding: 6px;
-  font-size: 40px;
+  font-size: 35px;
   background-color: #fff;
 }
 .principal-container nav button:hover {
@@ -75,9 +82,8 @@ button {
   .principal-container h1 {
     font-size: 25px;
     line-height: 32px;
-
   }
-  
+
   .principal-container p {
     margin-top: 30px;
     font-size: 18px;

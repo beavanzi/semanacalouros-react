@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "unscii";
+  src: url("../../fonts/unscii-16-full.ttf") format("truetype"),
+    url("../../fonts/unscii-16-full.woff") format("woff");
+}
+
+* {
+  font-family: unscii;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.content-container {
+  max-width: 1180px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.box-container h1 {
+  font-size: 50px;
+  text-align: center;
+  line-height: 65px;
+  text-shadow: 3.5px 3.5px 0px rgba(0, 255, 0, 0.8);
+  margin: 0 18px 0 18px;
+}
+
+.table-content {
+}
+
+.table-content table {
+}
+
+.table-content td,
+.table-content th {
+  text-align: center;
+  padding: 4px 10px;
+  font-size: 20px;
+}
+
+/* .table-content th.blank {
+  background: none;
+} */
+
+.table-content td {
+  background: grey;
+}
+
+.table-content th {
+  background: #ffff;
+  color: #000;
+}
+
+.box-menu {
+  display: flex;
+  align-items: center;
+}
+
+.box-menu nav {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2em;
+}
+
+.box-menu .menu-item {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding: 1.5em;
+  transition: filter 0.2s;
+  background: rgb(0, 255, 0);
+  margin-bottom: 2px;
+  margin-left: 1px;
+  width: 8.5em;
+}
+
+.box-menu .menu-item {
+  border-color: #fff;
+  border-width: 1px;
+  border-top: #fff;
+}
+
+.box-menu .menu-item:hover {
+  filter: brightness(90%);
+}
+
+@media (max-width: 671px) {
+  .box-menu {
+  }
+
+  .content-container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .box-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+
+  .box-menu nav {
+    flex-direction: row;
+    margin-right: 0em;
+  }
+
+  .box-menu nav .menu-item {
+    flex-direction: row;
+    padding: 0.8em;
+  }
+}
+
+@media (max-width: 431px) {
+  .box-menu nav .menu-item {
+    flex-direction: row;
+    padding: 0.5em;
+    width: 40vw;
+    font-size: 1.2em;
+  }
+
+  .table-content td,
+  .table-content th {
+    text-align: center;
+    padding: 4px 10px;
+    font-size: 4.5vw;
+  }
+}

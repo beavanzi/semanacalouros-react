@@ -19,6 +19,7 @@ export default function Principal() {
       </header>
       <nav>
         <img src={gifDinosaur} alt="Google Dinosaur" />
+        <h2>Calouro - lvl. 0</h2>
         <button type="button" onClick={NavToLink}>
           START
         </button>
