@@ -1,0 +1,29 @@
+table tr td,
+table tr th {
+  text-align: center;
+  padding: 4px 10px;
+  font-size: 20px;
+}
+
+table tr td {
+  background: grey;
+}
+
+table tr th,
+table tbody tr td.modified {
+  background: #ffff;
+  color: #000;
+}
+
+@media (max-width: 431px) {
+  table tr td,
+  table tr th {
+    text-align: center;
+    padding: 4px 10px;
+    font-size: 4.5vw;
+  }
+
+  table {
+    margin: 0;
+  }
+}
