@@ -2,7 +2,7 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 
 import "./styles.css";
-import gifDinosaur from "../../assets/dinosaurgoogle.gif";
+import gifDinosaur from "../../assets/dinosaurblackbd.gif";
 
 export default function Principal() {
   const history = useHistory();

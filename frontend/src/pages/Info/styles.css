@@ -26,6 +26,7 @@
   color: black;
   background: white;
   box-shadow: 4px 4px 0px grey;
+  margin-bottom: 20px;
 }
 .box-container .content-container text #binary {
   font-size: 10px;
@@ -43,6 +44,7 @@
   margin-bottom: 20px;
   text-align: center;
   font-family: unscii;
+  padding: 0px;
 }
 
 @media (max-width: 671px) {
