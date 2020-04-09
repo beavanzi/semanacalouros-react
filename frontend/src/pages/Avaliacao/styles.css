@@ -1,0 +1,78 @@
+* {
+    font-family: unscii;
+}
+  
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: center;
+}
+  
+.content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.box-container .content-container form input {
+    box-shadow: 4px 4px 0px grey;
+    margin: 5px;
+    height: 70px;
+    border: 1px solid #dcdce6;
+    border-radius: 3px;
+    padding: 24px;
+    display: flex;
+}
+
+.box-container .content-container form button {
+    width: 405px;
+    padding: 27px;
+    border: 1px solid #dcdce6;
+    box-shadow: 4px 4px 0px grey;
+    border-radius: 3px;
+    margin: 25px;
+    transition: filter 0.2s;
+}
+
+.box-container .content-container form button:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+}
+
+.box-container .content-container form .input-group {
+    display: flex;
+}
+
+.box-container .content-container form .input-group input + input {
+    margin-left: 20px;
+}
+
+.box-container .content-container form #name {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.box-container .content-container form #description {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.box-container .content-container form #email {
+    width: 300px;
+    margin-right: 10px;
+}
+
+.box-container .content-container form #ra {
+    margin-left: 20px;
+    width: 120px;
+}
+
+
+
+
+
+
+
