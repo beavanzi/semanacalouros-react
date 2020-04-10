@@ -1,0 +1,49 @@
+.list-container .title2 {
+    display: flex;
+    margin-left: 400px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 100px;
+    text-shadow: 3.5px 3.5px 0px rgba(0, 255, 0, 0.8);
+    line-height: 250px;
+}
+
+.list-container ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+    list-style: none;
+}
+
+.list-container ul li {
+    background: #fff;
+    padding: 24px;
+    border-radius: 20px;
+    position: relative;
+    color: black;
+    width: 500px;
+    margin: auto;
+    box-shadow: 4px 4px 0px grey;
+}
+
+.list-container ul li strong {
+    display: block;
+    margin-bottom: 16px;
+    color: #41414d;
+    font-size: 20px;
+    text-shadow: 3.5px 3.5px 0px rgba(0, 255, 0, 0.8);
+}
+
+.list-container ul li p {
+    display: flex;
+    font-size: 11px;
+    margin-bottom: 10px;
+}

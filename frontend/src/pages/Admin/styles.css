@@ -12,7 +12,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    
 
     width: 100%;
     max-width: 1120px;
@@ -30,8 +31,9 @@
 }
 
 .admin-container .button {
-    margin-left: 300px;
-    width: 100px;
+    margin-left: 280
+    px;
+    width: 125px;
     margin-top: 10px;
     box-shadow: 4px 4px 0px grey;
     border: 3px solid #dcdce6;
