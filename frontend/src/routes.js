@@ -6,6 +6,7 @@ import Cronograma from "./pages/Cronograma";
 import Info from "./pages/Info";
 import Local from "./pages/Local";
 import Avaliacao from "./pages/Avaliacao";
+import Admin from "./pages/Admin";
 
 export default function Routes() {
   return (
@@ -16,6 +17,7 @@ export default function Routes() {
         <Route path="/info" component={Info} />;
         <Route path="/local" component={Local} />;
         <Route path="/avaliacao" component={Avaliacao} />
+        <Route path="/admin" component={Admin} />
       </Switch>
     </BrowserRouter>
   );
