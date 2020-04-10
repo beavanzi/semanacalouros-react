@@ -3,12 +3,10 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    font-size: 50px;
+    font-size: 100px;
     text-shadow: 3.5px 3.5px 0px rgba(0, 255, 0, 0.8);
     line-height: 250px;
 }
-
-
 
 .admin-container {
     display: flex;
@@ -31,16 +29,19 @@
     padding: 10px;
 }
 
-.admin-container button {
+.admin-container .button {
     margin-left: 300px;
     width: 100px;
     margin-top: 10px;
     box-shadow: 4px 4px 0px grey;
     border: 3px solid #dcdce6;
     transition: filter 0.2s;
+    color: black;
+    background-color: white;
+    font-size: 20px;
 }
 
-.admin-container button:hover {
+.admin-container .button:hover {
     filter: brightness(80%);
     cursor: pointer;
 }

@@ -7,6 +7,7 @@ import Info from "./pages/Info";
 import Local from "./pages/Local";
 import Avaliacao from "./pages/Avaliacao";
 import Admin from "./pages/Admin";
+import AdminInfo from "./pages/AdminInfo";
 
 export default function Routes() {
   return (
@@ -18,6 +19,7 @@ export default function Routes() {
         <Route path="/local" component={Local} />;
         <Route path="/avaliacao" component={Avaliacao} />
         <Route path="/admin" component={Admin} />
+        <Route path="/admininfo" component={AdminInfo} />
       </Switch>
     </BrowserRouter>
   );
