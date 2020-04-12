@@ -57,7 +57,7 @@ export default function Avaliacao() {
                         <input id="ra" 
                             placeholder="RA"
                             value={ra}
-                            onChange={e => setRa(e.target.value)} 
+                            onChange={e => setRa(e.target.value)}
                         />
                     </div>
                     <input id="description" 
