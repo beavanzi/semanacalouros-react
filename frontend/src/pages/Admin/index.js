@@ -13,7 +13,7 @@ export default function Admin() {
         e.preventDefault();
 
         try {
-            const response = await api.post('sessions', { admin_id });
+            await api.post('sessions', { admin_id });
 
             localStorage.setItem('admin_id', admin_id);
 

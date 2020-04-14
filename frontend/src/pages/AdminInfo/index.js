@@ -4,19 +4,17 @@ import api from "../../services/api";
 import "./styles.css";
 
 export default function AdminInfo() {
-  const admin_id = localStorage.getItem("admin_id");
+  const admin_id = localStorage.getItem('admin_id');
   const [avaliations, setAvaliations] = useState([]);
 
   useEffect(() => {
-    api
-      .get("avaliations", {
+    api.get('avaliations', {
         hearders: {
           Authorization: admin_id,
         },
-      })
-      .then((response) => {
+      }).then(response => {
         setAvaliations(response.data);
-      });
+      })
   }, [admin_id]);
 
   return (
@@ -25,7 +23,7 @@ export default function AdminInfo() {
       <div className="list-container">
         <h2 className="title2">Avaliações cadastradas:</h2>
         <ul>
-          {avaliations.map((avaliation) => (
+            {avaliations.map(avaliation => (
             <li key={avaliation.id}>
               <strong>NOME:</strong>
               <p>{avaliation.name}</p>
@@ -36,7 +34,7 @@ export default function AdminInfo() {
               <strong>DESCRIÇÃO:</strong>
               <p>{avaliation.description}</p>
             </li>
-          ))}
+            ))}
         </ul>
       </div>
     </div>

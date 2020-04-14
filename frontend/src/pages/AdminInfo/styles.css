@@ -1,8 +1,9 @@
 .list-container .title2 {
   display: flex;
-  margin-left: 150px;
+  margin-left: 400px;
   font-size: 15px;
   margin-bottom: 20px;
+
 }
 
 .title {
@@ -38,7 +39,7 @@
   margin-bottom: 16px;
   color: #41414d;
   font-size: 20px;
-  text-shadow: 2px 2px 0px rgba(0, 255, 0, 0.8);
+  text-shadow: 3.5px 3.5px 0px rgba(0, 255, 0, 0.8);
 }
 
 .list-container ul li p {
