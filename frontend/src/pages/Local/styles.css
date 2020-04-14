@@ -1,9 +1,3 @@
-@font-face {
-  font-family: "unscii";
-  src: url("../../fonts/unscii-16-full.ttf") format("truetype"),
-    url("../../fonts/unscii-16-full.woff") format("woff");
-}
-
 * {
   font-family: unscii;
 }

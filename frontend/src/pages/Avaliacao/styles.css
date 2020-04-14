@@ -1,78 +1,93 @@
 * {
-    font-family: unscii;
+  font-family: unscii;
 }
-  
+
 .box-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  justify-content: center;
 }
-  
+
 .content-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
 }
 
 .box-container .content-container form input {
-    box-shadow: 4px 4px 0px grey;
-    margin: 5px;
-    height: 70px;
-    border: 1px solid #dcdce6;
-    border-radius: 3px;
-    padding: 24px;
-    display: flex;
+  box-shadow: 4px 4px 0px grey;
+  margin: 5px;
+  border: 1px solid #dcdce6;
+  border-radius: 3px;
+  padding: 20px;
+  display: flex;
+  font-size: 20px;
+  min-width: 0px;
+}
+
+.content-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+  max-width: 80%;
 }
 
 .box-container .content-container form button {
-    width: 405px;
-    padding: 27px;
-    border: 1px solid #dcdce6;
-    box-shadow: 4px 4px 0px grey;
-    border-radius: 3px;
-    margin: 25px;
-    transition: filter 0.2s;
+  min-width: 200px;
+  padding: 27px;
+  border: 1px solid #dcdce6;
+  box-shadow: 4px 4px 0px grey;
+  border-radius: 3px;
+  margin: 25px;
+  transition: filter 0.2s;
+  font-size: 20px;
 }
 
 .box-container .content-container form button:hover {
-    filter: brightness(90%);
-    cursor: pointer;
+  filter: brightness(90%);
+  cursor: pointer;
 }
 
 .box-container .content-container form .input-group {
-    display: flex;
-}
-
-.box-container .content-container form .input-group input + input {
-    margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .box-container .content-container form #name {
-    width: 100%;
-    margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .box-container .content-container form #description {
-    margin-top: 10px;
-    width: 100%;
+  margin-top: 10px;
+  width: 100%;
 }
 
 .box-container .content-container form #email {
-    width: 300px;
-    margin-right: 10px;
+  width: 70%;
+  margin: 0;
 }
 
 .box-container .content-container form #ra {
-    margin-left: 20px;
-    width: 119px;
+  width: 25%;
+  margin: 0;
 }
 
+@media (max-width: 671px) {
+  .content-container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+}
 
-
-
-
-
-
+@media (max-width: 431px) {
+  .box-container .content-container form input,
+  .box-container .content-container form button {
+    font-size: 5.5vw;
+  }
+}
