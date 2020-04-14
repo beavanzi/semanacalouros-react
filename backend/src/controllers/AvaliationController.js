@@ -8,8 +8,6 @@ module.exports = {
 
         const avaliations = await connection('avaliations')
             .select('*');
-
-        response.header('X-Total-Count', count['count(*)']);
     
         return response.json(avaliations);
     },
