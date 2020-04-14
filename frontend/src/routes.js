@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import React, { useState } from "react";
+import { BrowserRouter, Route, Switch, Redirect, withRouter } from "react-router-dom";
 
 import Principal from "./pages/Principal";
 import Cronograma from "./pages/Cronograma";
@@ -8,6 +8,29 @@ import Local from "./pages/Local";
 import Avaliacao from "./pages/Avaliacao";
 import Admin from "./pages/Admin";
 import AdminInfo from "./pages/AdminInfo";
+
+const fakeAuth = {
+  isAuthenticated: false,
+  authenticate(cb) {
+    this.isAuthenticated = true
+    setTimeout(cb, 100)
+  },
+  signout(cb) {
+    this.isAuthenticated = false
+    setTimeout(cb, 100)
+  }
+};
+
+const PrivateRoute = ({ component: Component, ...rest }) => (
+  <Route {...rest} render={(props) => (
+    fakeAuth.isAuthenticated === true
+      ? <Component {...props} />
+      : <Redirect to={{
+          pathname: '/info',
+          state: { from: props.location }
+        }} />
+  )} />
+)
 
 export default function Routes() {
   return (
@@ -19,8 +42,11 @@ export default function Routes() {
         <Route path="/local" component={Local} />;
         <Route path="/avaliacao" component={Avaliacao} />
         <Route path="/admin" component={Admin} />
-        <Route path="/admininfo" component={AdminInfo} />
+        {/* <Route path="/admininfo" component={AdminInfo} /> */}
+        <PrivateRoute path="/admininfo" component={AdminInfo} />
       </Switch>
     </BrowserRouter>
   );
 }
+
+

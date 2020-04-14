@@ -1,5 +1,5 @@
 const express = require('express');
-const { celebrate, Segments, Joi } = require('celebrate');
+const { isCelebrate , celebrate, Segments, Joi } = require('celebrate');
 
 const AvaliationController = require('./controllers/AvaliationController');
 const SessionController = require('./controllers/SessionController');

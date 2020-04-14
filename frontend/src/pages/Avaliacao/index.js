@@ -30,9 +30,9 @@ export default function Avaliacao() {
 
       alert("Avaliação enviada com sucesso!");
 
-      history.push("/");
+      history.push("/info");
     } catch (err) {
-      alert("Erro no cadastro, tente novamente.");
+      alert("Erro na avaliação, tente novamente!");
     }
   }
 
@@ -44,6 +44,7 @@ export default function Avaliacao() {
         <form onSubmit={handleAvaliacao}>
           <input
             id="name"
+            type="text"
             placeholder="Seu Nome"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -58,6 +59,8 @@ export default function Avaliacao() {
             />
             <input
               id="ra"
+              minLength="6"
+              maxLength="6"
               placeholder="RA"
               value={ra}
               onChange={(e) => setRa(e.target.value)}
