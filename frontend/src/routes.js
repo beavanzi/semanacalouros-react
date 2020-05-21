@@ -24,8 +24,8 @@ export default function Routes() {
         <Route path="/info" component={Info} />;
         <Route path="/local" component={Local} />;
         {/* <Route path="/avaliacao" component={Avaliacao} /> */}
-        <Route path="/admin" component={Admin} />
-        <Route path="/admininfo" component={AdminInfo} />
+        {/* <Route path="/admin" component={Admin} />
+        <Route path="/admininfo" component={AdminInfo} /> */}
       </Switch>
     </BrowserRouter>
   );
