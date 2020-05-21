@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "recepcaocalouros",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && rm -rf ../pet-api/client/pet/* && cp -r build/* ../pet-api/client/pet/",
+    "build": "react-scripts build  && cp -r build/* ../pet-api/client/recepcaocalouros",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
