@@ -23,7 +23,7 @@ export default function Routes() {
         <Route path="/cronograma" component={Cronograma} />;
         <Route path="/info" component={Info} />;
         <Route path="/local" component={Local} />;
-        <Route path="/avaliacao" component={Avaliacao} />
+        {/* <Route path="/avaliacao" component={Avaliacao} /> */}
         <Route path="/admin" component={Admin} />
         <Route path="/admininfo" component={AdminInfo} />
       </Switch>

@@ -30,7 +30,8 @@
   flex-direction: column;
   align-items: center;
 }
-.box-container .content-container .content p {
+.box-container .content-container .content p,
+.box-container .content-container .content a {
   width: 70%;
   font-family: unscii;
   text-align: center;
