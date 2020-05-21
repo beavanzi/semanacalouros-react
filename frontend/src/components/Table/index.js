@@ -5,12 +5,14 @@ import "./styles.css";
 export default class Table extends React.Component {
   renderTableData() {
     return this.props.atividade.map((row) => {
-      const { horario, atividade1, atividade2 } = row; //destructuring
+      console.log(row);
+      const { horario, dia, atividades, plataforma } = row; //destructuring
       return (
         <tr>
           <td className="modified">{horario}</td>
-          <td>{atividade1}</td>
-          <td>{atividade2}</td>
+          <td>{dia}</td>
+          <td>{atividades}</td>
+          <td>{plataforma}</td>
         </tr>
       );
     });
@@ -22,8 +24,9 @@ export default class Table extends React.Component {
         <table>
           <tr>
             <th style={{ backgroundColor: "#000", color: "#000" }}></th>
-            <th>Dia 1</th>
-            <th>Dia 2</th>
+            <th>Dia</th>
+            <th>Atividades</th>
+            <th>Plataforma</th>
           </tr>
           <tbody>{this.renderTableData()}</tbody>
         </table>

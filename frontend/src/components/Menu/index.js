@@ -23,9 +23,9 @@ export default function Menu() {
         <NavLink className="menu-item" to="/local" activeClassName="active">
           Local
         </NavLink>
-        <NavLink className="menu-item" to="/avaliacao" activeClassName="active">
+        {/* <NavLink className="menu-item" to="/avaliacao" activeClassName="active">
           Avaliação
-        </NavLink>
+        </NavLink> */}
       </nav>
     </div>
   );
