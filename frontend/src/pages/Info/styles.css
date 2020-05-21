@@ -47,10 +47,35 @@
   padding: 0px;
 }
 
+.box-container .content-container text h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: unscii;
+  padding: 0px;
+}
+
+.box-container .content-container .container-footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.box-container .content-container .container-footer img {
+  height: 40px;
+  margin: 0px 5px 0px 5px;
+}
+
 @media (max-width: 671px) {
   .box-container .content-container text h1 {
     font-size: 6vw;
   }
+
+  .box-container .content-container text h2 {
+    font-size: 5vw;
+  }
+
   .box-container .content-container text {
     max-width: 80%;
   }
@@ -58,5 +83,10 @@
   .box-container .content-container text p {
     font-size: 4vw;
     margin-bottom: 20px;
+  }
+
+  .box-container .content-container .container-footer img {
+    height: 30px;
+    margin: 0px 5px 0px 5px;
   }
 }

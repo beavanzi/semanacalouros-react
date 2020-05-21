@@ -1,6 +1,10 @@
 import React from "react";
 import Menu from "../../components/Menu";
 import Hello from "../../components/Hello";
+import caccomImg from "../../assets/caccom.png";
+import cainfoImg from "../../assets/cainfo.png";
+import dinImg from "../../assets/din.png";
+import petImg from "../../assets/pet.png";
 
 import "./styles.css";
 
@@ -17,9 +21,10 @@ export default function Info() {
           </p>
           <h1>Saudações, calouro/a!</h1>
           <p>
-            O DIN e demais grupos da organização tem a honra de recebe-lo, e
-            para comemorar sua chegada fizemos está recepção excepcionamente
-            para você.
+            Nós do DIN, PET Informática, Centro Acadêmico de Informática
+            (CAINFO) e Centro Acadêmico de Ciência da Computação (CACCOM) temos
+            a honra de recebê-lo e, para comemorar sua chegada, fizemos está
+            recepção excepcionamente para você.
           </p>
           <p>
             Ela servirá para que você compreenda melhor os aspectos gerais do
@@ -28,12 +33,21 @@ export default function Info() {
           </p>
           <p>
             É importante salientar que nossa recepção é DIFERENTE da Recepção da
-            UEM e diferente do TROTE.
+            UEM e diferente do TROTE, e irá ocorrer no formato de evento online
+            este ano por conta do Covid-19.
           </p>
           <p>
             Do fundo de nossos corações binários, esperamos que participe e
             curta esta experiência!
           </p>
+
+          <h2>Realização:</h2>
+          <div className="container-footer">
+            <img src={dinImg} alt="Logo DIN" />
+            <img src={caccomImg} alt="Logo CACCOM" />
+            <img src={cainfoImg} alt="Logo CAINFO" />
+            <img src={petImg} alt="Logo PET" />
+          </div>
         </text>
       </div>
     </div>
