@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && rm -rf ../pet-api/client/pet/* && cp -r build/* ../pet-api/client/pet/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
