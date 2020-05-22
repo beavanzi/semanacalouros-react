@@ -1,10 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
+import { BrowserRouter } from 'react-router-dom';
+import HttpsRedirect from 'react-https-redirect';
+import App from "./App.js";
+import './App.css';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <HttpsRedirect>
+      <App />
+    </HttpsRedirect>
+  </BrowserRouter>,
   document.getElementById("root")
 );

@@ -17,7 +17,7 @@ import AdminInfo from "./pages/AdminInfo";
 
 export default function Routes() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/recepcaocalouros">
       <Switch>
         <Route path="/" exact component={Principal} />;
         <Route path="/cronograma" component={Cronograma} />;
