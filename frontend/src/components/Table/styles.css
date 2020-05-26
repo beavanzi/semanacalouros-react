@@ -27,3 +27,36 @@ table tbody tr td.modified {
     margin: 0;
   }
 }
+
+@media (max-width: 671px) {
+  .loader {
+    margin-top: 50px;
+    margin-left: 0px;
+  }
+}
+
+.loader {
+  /* position: absolute;
+  top: calc(50% - 4em);*/
+  /* left: calc(50% - 4em); */
+  margin-left: 100px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border: 1.1em solid rgba(0, 0, 0, 0.2);
+  border-left: 1.1em solid #000000;
+  border-radius: 50%;
+  animation: load8 0.3s infinite linear;
+  transition: opacity 0.3s;
+}
+
+@keyframes load8 {
+  0% {
+    transform: translateX(-50%);
+    transform: translateY(0px);
+  }
+  10% {
+    transform: translateX(-50%);
+    transform: translateY(20px);
+  }
+}

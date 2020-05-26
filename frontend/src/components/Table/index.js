@@ -1,4 +1,5 @@
 import React from "react";
+import Rex from "../../assets/rexBranco.png";
 
 import "./styles.css";
 
@@ -6,6 +7,7 @@ export default class Table extends React.Component {
   renderTableData() {
     return this.props.atividade.map((row) => {
       console.log(row);
+
       const { horario, dia, atividades, plataforma } = row; //destructuring
       return (
         <tr>
@@ -20,16 +22,22 @@ export default class Table extends React.Component {
 
   render() {
     return (
-      <div>
-        <table>
-          <tr>
-            <th style={{ backgroundColor: "#000", color: "#000" }}></th>
-            <th>Dia</th>
-            <th>Atividades</th>
-            <th>Plataforma</th>
-          </tr>
-          <tbody>{this.renderTableData()}</tbody>
-        </table>
+      <div style={{ display: "flex" }}>
+        {this.props.loading ? (
+          <div class="loader">
+            <img src={Rex} style={{ width: 180 }} />
+          </div>
+        ) : (
+          <table>
+            <tr>
+              <th style={{ backgroundColor: "#000", color: "#000" }}></th>
+              <th>Dia</th>
+              <th>Atividades</th>
+              <th>Plataforma</th>
+            </tr>
+            <tbody>{this.renderTableData()}</tbody>
+          </table>
+        )}
       </div>
     );
   }

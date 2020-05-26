@@ -9,11 +9,15 @@ export default function Cronograma() {
   const ApiURL =
     "https://script.google.com/macros/s/AKfycbym_40P0a9KpewKla4p5YhcH41f7wCbFO1FDGD8zcivxJesBicQ/exec";
   const [atividades, setAtividades] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     var result = fetch(ApiURL)
       .then((response) => response.json())
-      .then((d) => setAtividades(d.filter((item) => item.horario.length > 0)));
+      .then((d) => {
+        setAtividades(d.filter((item) => item.horario.length > 0));
+        setLoading(false);
+      });
   }, []);
 
   return (
@@ -21,7 +25,7 @@ export default function Cronograma() {
       <Hello />
       <div className="content-container">
         <Menu />
-        <Table atividade={atividades} />
+        <Table atividade={atividades} loading={loading} />
       </div>
     </div>
   );
