@@ -31,7 +31,7 @@ table tbody tr td.modified {
 @media (max-width: 671px) {
   .loader {
     margin-top: 50px;
-    margin-left: 0px;
+    margin-left: 0px !important;
   }
 }
 
